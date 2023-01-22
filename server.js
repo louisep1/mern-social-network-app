@@ -5,7 +5,7 @@ const colors = require('colors')
 const dotenv = require('dotenv').config()
 const { errorHandler } = require('./backend/middleware/errorMiddleware')
 
-const connectDB = require('./config/db')
+const connectDB = require('./backend/config/db')
 const port = process.env.PORT || 5000
 
 connectDB()
